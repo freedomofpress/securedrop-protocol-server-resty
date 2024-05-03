@@ -11,5 +11,4 @@ with open("keys/intermediate.sig", "r") as f:
     nr_sig = f.read()
 
 res = requests.post(f"http://{commons.SERVER}/keys", json={"fpf_key": fpf_key, "newsroom_key": nr_key, "newsroom_sig": nr_sig})
-
-assert(res.status_code == 200)
+res.raise_for_status()
