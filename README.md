@@ -1,5 +1,5 @@
-## SecureDrop NG in OpenResty
-Quick toy implementation of the SecureDrop server described in the [SecureDrop POC](https://github.com/freedomofpress/securedrop-protocol) repository. It depends only on `cjson` and `luasodium`. It is quite fast, but does not support attachments and does lack mitigations (decoy messages, time). It is intended to show how portable is a server implementation and do some more realistic benchmark of how much it can scale.
+## SecureDrop Protocol in OpenResty
+Quick toy implementation of the SecureDrop server described in the [SecureDrop Protocol](https://github.com/freedomofpress/securedrop-protocol) repository. It depends only on `cjson` and `luasodium`. It is quite fast, but does not support attachments and does lack mitigations (decoy messages, time). It is intended to show how portable is a server implementation and do some more realistic benchmark of how much it can scale.
 
 ## Usage
  - Install `luasodium` using LuaRocks
